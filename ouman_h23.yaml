@@ -44,6 +44,30 @@ modbus:
         device_class: temperature
         state_class: measurement
 
+      - name: "Ouman L2 Menovesi"
+        unique_id: ouman_h23_l1_meno
+        slave: 1
+        address: 209         # UI 5
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
+
+      - name: "Ouman L2 Paluuvesi"
+        unique_id: ouman_h23_l1_paluu
+        slave: 1
+        address: 211         # UI 6
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
+
       - name: "Ouman LV Menovesi"
         unique_id: ouman_h23_lv_meno
         slave: 1
