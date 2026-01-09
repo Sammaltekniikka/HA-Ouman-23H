@@ -1,0 +1,57 @@
+# Ouman H23 Modbus-sensorit Home Assistantiin
+# Perustuu tekniseen Modbus register-dokumenttiin (S32/int32-formaatti)
+
+modbus:
+  - name: ouman_h23
+    type: tcp
+    host: 192.168.x.x  # Korvaa tämä Waveshare-laitteen oikealla IP-osoitteella
+    port: 502 # Waveshare portti
+    
+    sensors:
+      - name: "Ouman Ulkolämpötila"
+        unique_id: ouman_h23_ulko
+        slave: 1
+        address: 201         # UI 1
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
+
+      - name: "Ouman L1 Menovesi"
+        unique_id: ouman_h23_l1_meno
+        slave: 1
+        address: 203         # UI 2
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
+
+      - name: "Ouman L1 Paluuvesi"
+        unique_id: ouman_h23_l1_paluu
+        slave: 1
+        address: 205         # UI 3
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
+
+      - name: "Ouman LV Menovesi"
+        unique_id: ouman_h23_lv_meno
+        slave: 1
+        address: 215         # UI 8
+        input_type: holding
+        data_type: int32
+        unit_of_measurement: "°C"
+        scale: 0.1
+        precision: 1
+        device_class: temperature
+        state_class: measurement
