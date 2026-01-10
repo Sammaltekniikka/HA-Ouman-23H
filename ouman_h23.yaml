@@ -91,3 +91,34 @@ modbus:
         precision: 1
         device_class: temperature
         state_class: measurement
+
+              # --- VENTTIILIEN ASENNOT (%) ---
+      - name: "Ouman L1 Venttiili"
+        unique_id: ouman_l1_vent_v_final
+        address: 613
+        input_type: holding
+        data_type: uint16
+        unit_of_measurement: "%"
+        scale: 1
+        precision: 0
+        state_class: measurement
+
+      - name: "Ouman L2 Venttiili"
+        unique_id: ouman_l2_vent_v_final
+        address: 306
+        input_type: holding
+        data_type: uint16
+        unit_of_measurement: "%"
+        scale: 1
+        precision: 0
+        state_class: measurement
+
+      - name: "Ouman LV Venttiili"
+        unique_id: ouman_lv_vent_v_final
+        address: 225
+        input_type: holding
+        data_type: uint16
+        unit_of_measurement: "%"
+        scale: 1
+        precision: 0
+        state_class: measurement
