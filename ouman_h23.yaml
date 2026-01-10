@@ -1,5 +1,6 @@
-# Ouman H23 Modbus-sensorit Home Assistantiin
+# Ouman 23H Modbus-sensorit Home Assistantiin
 # Perustuu tekniseen Modbus register-dokumenttiin (S32/int32-formaatti)
+# Ouman 23H säädin vuosimalli 2021 ja versio 2.0.1
 
 modbus:
   - name: ouman_h23
