@@ -16,10 +16,10 @@ Home Assistant integration for Ouman H23 heating controller using Modbus RTU/TCP
 - **Modbus Slave ID:** 1
 
 ## Project Status
-- [ ] Install Waveshare adapter
-- [ ] Upload Modbus PDF map to repository
-- [ ] Configure Modbus sensors in Home Assistant
-- [ ] Verify data accuracy from Ouman H23
+- [X] Install Waveshare adapter
+- [X] Upload Modbus PDF map to repository
+- [X] Configure Modbus sensors in Home Assistant
+- [X] Verify data accuracy from Ouman H23
 
 
 # Ouman 23H Modbus-integraatio (Vuosimalli 2021)
