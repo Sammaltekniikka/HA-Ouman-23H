@@ -37,3 +37,7 @@ Tässä repositoriossa oleva rekisterilista on testattu toimivaksi vuoden 2021 m
 
 ## Tekniset tiedot
 Kaikki arvot ovat **holding-rekistereitä** ja käyttävät **S32-osoitemuotoa** (32-bittinen etumerkkinen kokonaisluku). Lämpötila-arvoissa on yksi desimaali (scale: 0.1).
+
+## Youtube video
+https://youtu.be/izNtwWvsyh4
+Videolla käydään Waveshare RS485 POE Modbuys gateway asennus ja HomeAssistantin ohjelmointi.
